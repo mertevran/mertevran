@@ -1,10 +1,13 @@
 <div align="center">
 
-  <!-- Matrix Neon Başlık -->
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=250&text=MERT%20EVRAN&fontSize=80&fontAlignY=50&animation=twinkling&fontColor=00FF41" alt="Mert Evran" />
+  <!-- Efsanevi Matrix Kayan Kodlar (Digital Rain) GIF'i -->
+  <img src="https://media.giphy.com/media/VwXcgwGIPyiiY/giphy.gif" width="850" height="200" alt="Matrix Rain" />
 
-  <!-- Matrix Terminal Yazı Efekti (Arka planı siyah yapıldı ve başlıkla birleştirildi) -->
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=600&size=22&pause=1500&color=00FF41&background=000000&center=true&vCenter=true&width=850&height=100&lines=Wake+up,+Mert...;The+Matrix+has+you...;LinkedIn:+mert-evran;E-Posta:+mertevran1907@gmail.com" alt="İletişim Bilgileri" />
+  <!-- Matrix Neon Başlık -->
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=120&text=MERT%20EVRAN&fontSize=75&fontAlignY=60&animation=twinkling&fontColor=00FF41" alt="Mert Evran" />
+
+  <!-- Hacker Tarzı Terminal Yazı Efekti -->
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=500&size=22&pause=1800&color=00FF41&background=000000&center=true&vCenter=true&width=850&height=120&lines=root@zion:~%23+Sisteme+siziliyor...;root@zion:~%23+Baglanti+kuruldu.;Wake+up,+Mert...;The+Matrix+has+you...;Follow+the+white+rabbit...;LinkedIn:+mert-evran;E-Posta:+mertevran1907@gmail.com" alt="Terminal Girişi" />
 
   <br/><br/>
 
