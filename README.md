@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Yüzüklerin Efendisi (Ateş ve Tek Yüzük) GIF'i -->
-  <img src="https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif" width="800" height="250" alt="The One Ring" />
+  <img src="https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif" width="800" height="250" alt="The One Ring Fire" />
 
   <!-- Yüzüklerin Efendisi Başlık -->
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=120&text=MERT%20EVRAN&fontSize=80&fontAlignY=50&animation=twinkling&fontColor=FFD700" alt="Mert Evran" />
