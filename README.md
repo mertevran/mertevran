@@ -1,15 +1,21 @@
 <div align="center">
   
-  <!-- Yapay Zeka 'Veri Ağı' Animasyonlu Başlık -->
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=00051a&height=250&text=MERT%20EVRAN&fontSize=80&fontAlignY=45&animation=twinkling&fontColor=00f0ff&desc=%5B%20AI%20CORE%20ONLINE%20%5D&descSize=22&descAlignY=75" alt="Mert Evran" />
-
-  <!-- Yapay Zeka Terminali (Yazma Efekti) -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=00f0ff&background=00051a&center=true&vCenter=true&width=800&height=120&lines=>_++Sistem++başlatılıyor...;>_++Kullanıcı++doğrulandı:++Mert++Evran;>_++Yapay++Zeka++Ağı++Aktif...;>_++Bağlantı++için++hedef++seçiniz_++" alt="AI Terminal" />
+  <!-- Şık ve Kurumsal Lacivert Geçişli Animasyonlu Başlık -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=000B18,001F3F&height=250&section=header&text=Mert%20Evran&fontSize=65&fontAlignY=40&animation=fadeIn&fontColor=ffffff" alt="Mert Evran" />
 
   <br/><br/>
 
-  <!-- Siber Temalı (Neon Mavi & Gece Laciverti) Kesin Çalışan Butonlar -->
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-00051a?style=for-the-badge&logo=linkedin&logoColor=00f0ff)](https://www.linkedin.com/in/mert-evran/)
-  [![E-Posta](https://img.shields.io/badge/E_Posta-00051a?style=for-the-badge&logo=gmail&logoColor=00f0ff)](mailto:mertevran1907@gmail.com)
+  <!-- Profesyonel ve Temiz Yazma Efekti (Kırılma yapmaz) -->
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&pause=2000&color=66b3ff&center=true&vCenter=true&width=600&lines=LinkedIn:+mert-evran;E-Posta:+mertevran1907@gmail.com" alt="İletişim Bilgileri" />
+
+  <br/><br/>
+
+  <!-- Yüksek Çözünürlüklü ve Kontrastlı Kurumsal Butonlar -->
+  <a href="https://www.linkedin.com/in/mert-evran/">
+    <img src="https://img.shields.io/badge/LinkedIn-001F3F?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:mertevran1907@gmail.com">
+    <img src="https://img.shields.io/badge/E_Posta-001F3F?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
 
 </div>
