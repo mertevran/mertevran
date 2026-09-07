@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- Hata veren karakterler temizlendi, stabil hareketli lacivert arkaplan -->
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=000A1A,001B36&height=180&text=MERT%20EVRAN&fontSize=60&fontAlignY=45&desc=Software%20Engineer%20-%20Big%20Data%20and%20AI&descSize=20&descAlignY=75&animation=twinkling&fontColor=ffffff" alt="Mert Evran" />
+  <!-- Asla kırılmayan, gece mavisi arkaplanlı yazma efekti -->
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=40&pause=2000&color=FFFFFF&background=000A1A&center=true&vCenter=true&width=800&height=180&lines=MERT+EVRAN;Software+Engineer;Big+Data+and+AI" alt="Mert Evran" />
 
   <br/><br/>
 
