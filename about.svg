@@ -1,66 +1,87 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="100%">
   <defs>
-    <!-- Neon Mavi Degrade -->
+    <!-- ========================================== -->
+    <!-- 1. NEON GEÇİŞ RENKLERİ (Degrade Çerçeve)   -->
+    <!-- Buradaki #hex kodlarını istediğin maviyle değiştirebilirsin -->
+    <!-- ========================================== -->
     <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#4facfe" />
-      <stop offset="100%" stop-color="#0072ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
 
-    <!-- Hareketli Devre Işığı Gradyanı -->
+    <!-- ========================================== -->
+    <!-- 2. HAREKETLİ IŞIK DAMLASI (PULSE) RENKLERİ -->
+    <!-- ========================================== -->
     <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
       <stop offset="50%" stop-color="#38bdf8" stop-opacity="1" />
-      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </linearGradient>
 
     <style>
+      /* Arka Plan Paneli (Gece Mavisi / Siyah) */
       .bg-panel {
-        fill: #030712;
-        stroke: #1e293b;
+        fill: #030712;         /* Panel arka plan rengi */
+        stroke: #1e293b;       /* Çok ince dış sınır çizgisi */
         stroke-width: 1.5;
-        rx: 16px;
+        rx: 16px;              /* Köşe yuvarlaklığı */
       }
+
+      /* Animasyonlu Dış Kesik Çizgili Çerçeve */
       .cyber-border {
         stroke: url(#neonGlow);
-        stroke-width: 2;
+        stroke-width: 2;       /* Çizgi kalınlığı */
         fill: none;
         stroke-dasharray: 80 40;
+        /* 12s yazan yerden animasyon hızını artırıp azaltabilirsin (örn: 8s daha hızlı, 20s daha yavaş) */
         animation: rotateDash 12s linear infinite;
       }
+
+      /* Çerçeve Ortalarındaki Parlayan AI Düğümleri (Noktalar) */
       .circuit-node {
         fill: #38bdf8;
         filter: drop-shadow(0 0 6px #38bdf8);
       }
+
+      /* Çerçeve Üzerinde Dolan Işık Animasyonu */
       .pulse-line {
         stroke: #38bdf8;
-        stroke-width: 2;
-        stroke-dasharray: 100 400;
+        stroke-width: 2.5;
+        stroke-dasharray: 120 400;
+        /* 4s animasyon tur süresi */
         animation: pulseMove 4s ease-in-out infinite;
       }
+
+      /* BAŞLIK (⚡ ABOUT ME) STİLİ */
       .title-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 15px;
+        font-size: 15px;       /* Başlık boyutu */
         font-weight: 700;
-        letter-spacing: 3px;
-        fill: #38bdf8;
+        letter-spacing: 3px;   /* Harf aralığı */
+        fill: #38bdf8;         /* Başlık açık neon mavi rengi */
         user-select: none;
-        cursor: default;
+        -webkit-user-select: none;
       }
+
+      /* METİN GÖVDESİ STİLİ (Tıklanma / Link Rengi Tamamen Kapatıldı) */
       .body-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 15px;
+        font-size: 15px;       /* Metin boyutu */
         font-weight: 400;
         line-height: 25px;
-        fill: #cbd5e1;
+        fill: #cbd5e1;         /* TÜM METNİN TEK RENK SABİT KODU (Açık platin/gri) */
         user-select: none;
+        -webkit-user-select: none;
         cursor: default;
-        pointer-events: none;
+        pointer-events: none;  /* Tıklamayı tamamen iptal eder */
       }
+
+      /* ANİMASYON KEYFRAME'LERİ */
       @keyframes pulseMove {
-        0% { stroke-dashoffset: 500; opacity: 0.3; }
+        0% { stroke-dashoffset: 600; opacity: 0.2; }
         50% { opacity: 1; }
-        100% { stroke-dashoffset: 0; opacity: 0.3; }
+        100% { stroke-dashoffset: 0; opacity: 0.2; }
       }
       @keyframes rotateDash {
         to { stroke-dashoffset: 1000; }
@@ -68,29 +89,34 @@
     </style>
   </defs>
 
-  <!-- Arka Plan Paneli -->
+  <!-- Arka Plan Kartı -->
   <rect x="15" y="15" width="820" height="330" class="bg-panel" />
 
-  <!-- Dış Köşe Siber Süslemeler -->
+  <!-- Dört Köşedeki Siber Çizgiler (AI Arayüz Detayları) -->
   <path d="M 35 15 L 75 15 M 15 35 L 15 75" stroke="#38bdf8" stroke-width="3" fill="none" />
   <path d="M 815 15 L 775 15 M 835 35 L 835 75" stroke="#38bdf8" stroke-width="3" fill="none" />
   <path d="M 35 345 L 75 345 M 15 325 L 15 285" stroke="#38bdf8" stroke-width="3" fill="none" />
   <path d="M 815 345 L 775 345 M 835 325 L 835 285" stroke="#38bdf8" stroke-width="3" fill="none" />
 
-  <!-- Animasyonlu Çerçeve Yolu -->
+  <!-- Animasyonlu Neon Çerçeve Yolları -->
   <rect x="25" y="25" width="800" height="310" rx="12" class="cyber-border" />
   <rect x="25" y="25" width="800" height="310" rx="12" class="pulse-line" fill="none" />
 
-  <!-- AI Devre Bağlantı Noktaları -->
+  <!-- 4 Kenardaki Işıklı Düğümler (x, y koordinatları ile yeri belirlenir) -->
   <circle cx="25" cy="180" r="4" class="circuit-node" />
   <circle cx="825" cy="180" r="4" class="circuit-node" />
   <circle cx="425" cy="25" r="4" class="circuit-node" />
   <circle cx="425" cy="335" r="4" class="circuit-node" />
 
-  <!-- Başlık -->
+  <!-- ========================================== -->
+  <!-- 3. BAŞLIK YAZISI (İstediğin gibi değiştirebilirsin) -->
+  <!-- ========================================== -->
   <text x="50" y="65" class="title-text">⚡ ABOUT ME</text>
 
-  <!-- Metin İçeriği -->
+  <!-- ========================================== -->
+  <!-- 4. METİN İÇERİĞİ (Satır satır düzenleyebilirsin) -->
+  <!-- y="değeri" satırın yukarıdan aşağıya mesafesidir -->
+  <!-- ========================================== -->
   <g transform="translate(50, 95)">
     <text class="body-text">
       <tspan x="0" y="15">I’m driven by curiosity, continuous learning, and the desire to solve problems in</tspan>
