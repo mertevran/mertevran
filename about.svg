@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="100%">
+  <defs>
+    <!-- Neon Mavi Degrade -->
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+
+    <!-- Hareketli Devre Işığı Gradyanı -->
+    <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .bg-panel {
+        fill: #030712;
+        stroke: #1e293b;
+        stroke-width: 1.5;
+        rx: 16px;
+      }
+      .cyber-border {
+        stroke: url(#neonGlow);
+        stroke-width: 2;
+        fill: none;
+        stroke-dasharray: 80 40;
+        animation: rotateDash 12s linear infinite;
+      }
+      .circuit-node {
+        fill: #38bdf8;
+        filter: drop-shadow(0 0 6px #38bdf8);
+      }
+      .pulse-line {
+        stroke: #38bdf8;
+        stroke-width: 2;
+        stroke-dasharray: 100 400;
+        animation: pulseMove 4s ease-in-out infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        fill: #38bdf8;
+      }
+      .body-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        fill: #cbd5e1;
+      }
+      @keyframes pulseMove {
+        0% { stroke-dashoffset: 500; opacity: 0.3; }
+        50% { opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 0.3; }
+      }
+      @keyframes rotateDash {
+        to { stroke-dashoffset: 1000; }
+      }
+    </style>
+  </defs>
+
+  <!-- Arka Plan Paneli -->
+  <rect x="15" y="15" width="820" height="330" class="bg-panel" />
+
+  <!-- Dış Köşe Siber Süslemeler -->
+  <path d="M 35 15 L 75 15 M 15 35 L 15 75" stroke="#38bdf8" stroke-width="3" fill="none" />
+  <path d="M 815 15 L 775 15 M 835 35 L 835 75" stroke="#38bdf8" stroke-width="3" fill="none" />
+  <path d="M 35 345 L 75 345 M 15 325 L 15 285" stroke="#38bdf8" stroke-width="3" fill="none" />
+  <path d="M 815 345 L 775 345 M 835 325 L 835 285" stroke="#38bdf8" stroke-width="3" fill="none" />
+
+  <!-- Animasyonlu Çerçeve Yolu -->
+  <rect x="25" y="25" width="800" height="310" rx="12" class="cyber-border" />
+  <rect x="25" y="25" width="800" height="310" rx="12" class="pulse-line" fill="none" />
+
+  <!-- AI Devre Bağlantı Noktaları -->
+  <circle cx="25" cy="180" r="4" class="circuit-node" />
+  <circle cx="825" cy="180" r="4" class="circuit-node" />
+  <circle cx="425" cy="25" r="4" class="circuit-node" />
+  <circle cx="425" cy="335" r="4" class="circuit-node" />
+
+  <!-- Başlık -->
+  <text x="50" y="65" class="title-text">⚡ ABOUT ME</text>
+
+  <!-- Metin İçeriği -->
+  <g transform="translate(50, 95)">
+    <text class="body-text">
+      <tspan x="0" y="15">I’m driven by curiosity, continuous learning, and the desire to solve problems in</tspan>
+      <tspan x="0" y="45">better ways. I value analytical thinking, attention to detail, and taking ownership</tspan>
+      <tspan x="0" y="75">of my work. Rather than simply completing tasks, I focus on understanding the</tspan>
+      <tspan x="0" y="105">bigger picture and creating meaningful, sustainable value.</tspan>
+      <tspan x="0" y="150" fill="#93c5fd">My goal is to keep growing, take initiative, and become someone who consistently</tspan>
+      <tspan x="0" y="180" fill="#93c5fd">turns challenges into opportunities for improvement.</tspan>
+    </text>
+  </g>
+</svg>
