@@ -6,7 +6,6 @@
 
   <br/><br/>
 
-  <!-- AI Temalı Animasyonlu Çerçeve -->
-  <img src="./about.svg" alt="About Me" width="100%" />
+  <img src="https://raw.githubusercontent.com/mertevran/mertevran/main/about.svg?v=3" alt="About Me" width="100%" />
 
 </div>
